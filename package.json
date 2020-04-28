@@ -1,0 +1,46 @@
+{
+  "name": "@fay-next/config",
+  "version": "0.0.1-alpha.1",
+  "description": "fay next react config",
+  "scripts": {
+    "pub": "npm publish --access=public"
+  },
+  "private": false,
+  "keywords": [
+    "fay",
+    "fay-next",
+    "next.js",
+    "react",
+    "fay-react-tool",
+    "frontend"
+  ],
+  "contributors": [
+    "love-fay"
+  ],
+  "bugs": {
+    "url": "https://github.com/love-fay/fay-next-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/love-fay/fay-next-config"
+  },
+  "main": "*",
+  "module": "*",
+  "files": [
+    "config/",
+    "README.md"
+  ],
+  "email": "869770665@qq.com",
+  "author": "fay",
+  "license": "MIT",
+  "peerDependencies": {},
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "^9.3.6",
+    "next-offline": "^5.0.2"
+  },
+  "devEngines": {
+    "node": "8.x || 9.x || 10.x"
+  }
+}
