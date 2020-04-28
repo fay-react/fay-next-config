@@ -12,11 +12,11 @@ module.exports = (config, { buildId, dev, isServer, defaultLoaders, webpack }) =
   config.entry = async () => {
     const entries = await originalEntry()
     if (entries['main.js']) {
-      if(!dev && !entries['main.js'].includes('./config/client/sw/registry.js')){
-        entries['main.js'].unshift('./config/client/sw/registry.js')
+      if(!dev && !entries['main.js'].includes('@fay-next/config/client/sw/registry.js')){
+        entries['main.js'].unshift('@fay-next/config/client/sw/registry.js')
       }
-      if(!entries['main.js'].includes('./config/client/polyfills.js')){
-        entries['main.js'].unshift('./config/client/polyfills.js')
+      if(!entries['main.js'].includes('@fay-next/config/client/polyfills.js')){
+        entries['main.js'].unshift('@fay-next/config/client/polyfills.js')
       }
     }
     return entries

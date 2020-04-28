@@ -1,6 +1,6 @@
 {
   "name": "@fay-next/config",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.3",
   "description": "fay next react config",
   "scripts": {
     "pub": "npm publish --access=public"
@@ -36,9 +36,13 @@
   "peerDependencies": {},
   "devDependencies": {},
   "dependencies": {
+    "@types/node": "^13.13.4",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.3",
     "next": "^9.3.6",
-    "next-offline": "^5.0.2"
+    "next-offline": "^5.0.2",
+    "typescript": "^3.8.3"
   },
   "devEngines": {
     "node": "8.x || 9.x || 10.x"
