@@ -8,11 +8,12 @@ const swDest = pro ? 'sw.js' : 'static/sw.js';
 
 const withOffline = require('next-offline')
 
-const withNextConfig = ({assetPrefix='', generateInDevMode=false, ...nextConfig}) => {
+const withNextConfig = ({assetPrefix='', env, generateInDevMode=false, ...nextConfig}) => {
   const defaultConfig = {
     assetPrefix,
     env: {
       ASSET_PREFIX: assetPrefix,
+      ...env
     },
     webpack: webpackConfig,
     registerSwPrefix: assetPrefix,
@@ -28,7 +29,7 @@ const withNextConfig = ({assetPrefix='', generateInDevMode=false, ...nextConfig}
       // navigateFallback: assetPrefix + '/index.html',
       navigateFallbackDenylist: [/^\/_/],
     },
-
+    exportTrailingSlash: true,
   }
   if(!pro && generateInDevMode) {
     defaultConfig.experimental = {

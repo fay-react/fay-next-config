@@ -31,7 +31,7 @@
     "interface-over-type-literal": true,
     "jsdoc-format": true,
     "jsx-no-lambda": false,
-    "jsx-boolean-value": true,
+    "jsx-boolean-value": false,
     "label-position": true,
     "member-access": [true, "no-public"],
     "new-parens": true,

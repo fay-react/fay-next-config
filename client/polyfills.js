@@ -6,4 +6,5 @@
 //   'raf/polyfill',
 //   'whatwg-fetch',
 //   path.join(rootDir, 'node_modules/@keystore/tool/pollyfills/custom-event.js'),
-// console.log('polyfills');
+require('whatwg-fetch');
+console.info('polyfills:', ['whatwg-fetch']);

@@ -1,6 +1,6 @@
 {
   "name": "@fay-next/config",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.7",
   "description": "fay next react config",
   "scripts": {
     "pub": "npm publish --access=public"
@@ -42,7 +42,8 @@
     "http-proxy-middleware": "^1.0.3",
     "next": "^9.3.6",
     "next-offline": "^5.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "whatwg-fetch": "^3.0.0"
   },
   "devEngines": {
     "node": "8.x || 9.x || 10.x"

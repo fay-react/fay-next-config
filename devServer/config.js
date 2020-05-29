@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 const express = require('express')
 const getProxy = require('./proxy');
+const { parse } = require('url');
 const next = require('next')
 
 const devProxy = getProxy();
@@ -30,7 +31,17 @@ app
     }
 
     // Default catch-all handler to allow Next.js to handle all other routes
-    config.all('*', (req, res) => handle(req, res))
+    config.all('*', (req, res) => {
+      const parsedUrl = parse(req.url, true)
+      const { pathname, query } = parsedUrl
+
+      if (pathname.length > 1 && pathname.slice(-1) === '/') {
+        app.render(req, res, pathname.slice(0, -1), query)
+      }
+      else {
+        handle(req, res, parsedUrl)
+      }
+    })
 
     config.listen(port, err => {
       if (err) {
