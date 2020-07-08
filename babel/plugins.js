@@ -1,6 +1,3 @@
-const path = require('path');
-const rootDir = path.join(__dirname, '/../../../../..');
-
 const plugins = [
   "@babel/plugin-proposal-class-properties",
   "@babel/plugin-syntax-dynamic-import",

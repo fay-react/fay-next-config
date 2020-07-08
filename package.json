@@ -1,6 +1,6 @@
 {
   "name": "@fay-next/config",
-  "version": "0.0.1-alpha.11",
+  "version": "0.0.1-alpha.12",
   "description": "fay next react config",
   "scripts": {
     "pub": "npm publish --access=public"
@@ -36,6 +36,7 @@
   "peerDependencies": {},
   "devDependencies": {},
   "dependencies": {
+    "@babel/runtime-corejs3": "^7.10.4",
     "@types/node": "^13.13.4",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
