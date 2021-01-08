@@ -15,7 +15,7 @@ function getProxy(){
             })
         }
     } catch (e) {
-        console.log(e);
+        // console.info(e);
     }
     return proxy;
 }
