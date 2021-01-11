@@ -29,7 +29,7 @@ const withNextConfig = ({assetPrefix='', env, generateInDevMode=false, ...nextCo
       // navigateFallback: assetPrefix + '/index.html',
       navigateFallbackDenylist: [/^\/_/],
     },
-    exportTrailingSlash: true,
+    trailingSlash: true,
   }
   if(!pro && generateInDevMode) {
     defaultConfig.experimental = {

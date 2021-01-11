@@ -1,6 +1,6 @@
 {
   "name": "@fay-next/config",
-  "version": "0.0.1-alpha.17",
+  "version": "0.0.1-alpha.18",
   "description": "fay next react config",
   "scripts": {
     "start": "cross-env NODE_ENV=development PORT=8000 node ./devServer/config.js",
